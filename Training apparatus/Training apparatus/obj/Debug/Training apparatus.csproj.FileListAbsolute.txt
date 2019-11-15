@@ -1,0 +1,26 @@
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Training apparatus.exe.config
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training apparatus.csprojResolveAssemblyReference.cache
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.LoginForm.resources
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.Properties.Resources.resources
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training apparatus.csproj.GenerateResource.Cache
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Training apparatus.exe
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Training apparatus.pdb
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training apparatus.exe
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training apparatus.pdb
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\BouncyCastle.Crypto.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Google.Protobuf.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Data.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Web.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Renci.SshNet.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\SshNet.Security.Cryptography.dll
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Data.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Web.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.RegisterForm.resources
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.MainForm.resources
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.AdminForm.resources
