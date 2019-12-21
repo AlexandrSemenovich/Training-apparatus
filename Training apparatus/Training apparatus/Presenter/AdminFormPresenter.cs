@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Training_apparatus.Models.Servise;
+using Training_apparatus.Service;
 
 namespace Training_apparatus.Presentation
 {
@@ -12,9 +12,9 @@ namespace Training_apparatus.Presentation
     {
 
         private IKernel _kernel;
-        private Scs _scs;
+        private UserService _scs;
         private IAdminFormView _view;
-        public AdminForm(IKernel kernel, Scs scs, IAdminFormView view)
+        public AdminForm(IKernel kernel, UserService scs, IAdminFormView view)
         {
             _kernel = kernel;
             _scs = scs;

@@ -4,19 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Training_apparatus.Models.Servise;
+using Training_apparatus.Service;
 
-namespace Training_apparatus.Presentation
+namespace Training_apparatus.Presenter
 {
-    public class MainFormPresenter
+    public class MainFormPresenter : IPresenter
     {
         private IMainFormView _view;
-        private IKernel _kernel;
-        private Scs _scs;
-        public MainFormPresenter(IKernel kernel, Scs scs, IMainFormView view)
+
+        public MainFormPresenter(IMainFormView view)
         {
-            _kernel = kernel;
-            _scs = scs;
             _view = view;
         }
 

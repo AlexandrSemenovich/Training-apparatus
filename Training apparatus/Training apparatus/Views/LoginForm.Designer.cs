@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.Close = new System.Windows.Forms.Label();
             this.backgroung = new System.Windows.Forms.Panel();
-            this.reg_text = new System.Windows.Forms.Label();
+            this.registButton = new System.Windows.Forms.Label();
             this.loginField = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
@@ -61,7 +61,7 @@
             // backgroung
             // 
             this.backgroung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.backgroung.Controls.Add(this.reg_text);
+            this.backgroung.Controls.Add(this.registButton);
             this.backgroung.Controls.Add(this.loginField);
             this.backgroung.Controls.Add(this.buttonLogin);
             this.backgroung.Controls.Add(this.passField);
@@ -73,20 +73,19 @@
             this.backgroung.Name = "backgroung";
             this.backgroung.Size = new System.Drawing.Size(486, 565);
             this.backgroung.TabIndex = 0;
-            this.backgroung.Paint += new System.Windows.Forms.PaintEventHandler(this.backgroung_Paint);
             // 
-            // reg_text
+            // registButton
             // 
-            this.reg_text.AutoSize = true;
-            this.reg_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.reg_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.reg_text.ForeColor = System.Drawing.Color.Cornsilk;
-            this.reg_text.Location = new System.Drawing.Point(161, 521);
-            this.reg_text.Name = "reg_text";
-            this.reg_text.Size = new System.Drawing.Size(139, 17);
-            this.reg_text.TabIndex = 9;
-            this.reg_text.Text = "Еще нет аккаунта ?";
-            this.reg_text.Click += new System.EventHandler(this.label1_Click);
+            this.registButton.AutoSize = true;
+            this.registButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.registButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.registButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.registButton.Location = new System.Drawing.Point(161, 521);
+            this.registButton.Name = "registButton";
+            this.registButton.Size = new System.Drawing.Size(139, 17);
+            this.registButton.TabIndex = 9;
+            this.registButton.Text = "Еще нет аккаунта ?";
+            this.registButton.Click += new System.EventHandler(this.registButton_Click);
             // 
             // loginField
             // 
@@ -122,6 +121,7 @@
             this.passField.Size = new System.Drawing.Size(227, 25);
             this.passField.TabIndex = 6;
             this.passField.UseSystemPasswordChar = true;
+            this.passField.TextChanged += new System.EventHandler(this.passField_TextChanged);
             // 
             // pictureBox3
             // 
@@ -152,7 +152,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // LoginForm
             // 
@@ -162,7 +161,6 @@
             this.Controls.Add(this.backgroung);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.backgroung.ResumeLayout(false);
             this.backgroung.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -182,6 +180,6 @@
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.TextBox loginField;
-        private System.Windows.Forms.Label reg_text;
+        private System.Windows.Forms.Label registButton;
     }
 }

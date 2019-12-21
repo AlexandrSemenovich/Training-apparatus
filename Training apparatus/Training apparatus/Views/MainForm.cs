@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Training_apparatus.Presentation;
+using Training_apparatus.Presenter;
 
 namespace Training_apparatus
 {

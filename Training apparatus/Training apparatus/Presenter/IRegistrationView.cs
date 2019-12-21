@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace Training_apparatus.Presenter
 {
-    public interface ILoginView : IView
+    public interface IRegistrationView : IView
     {
-        event Action Login;
-        event Action GoToRegistration;
-
+        event Action Registration;
+        string Surname { get; }
+        string Sex { get; }
         string Username { get; }
+        string Login { get; }
         string Password { get; }
-        
-        void ShowError(string errorMessage);
-        void Start();
     }
 }

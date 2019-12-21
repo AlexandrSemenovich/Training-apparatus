@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Training_apparatus.Presenter
 {
-    public interface IMainFormView : IView
+    public interface IView
     {
-        event Action UserEnter;
+        void Show();
+        void Close();
     }
 }

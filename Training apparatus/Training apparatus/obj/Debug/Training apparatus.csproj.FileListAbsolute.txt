@@ -21,7 +21,6 @@ D:\Технологии программирования\Training apparatus\Trai
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\MySql.Web.xml
-D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.RegisterForm.resources
 D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.MainForm.resources
 D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.AdminForm.resources
 D:\Технологии программирования\1234567\Training apparatus\bin\Debug\Training apparatus.exe.config
@@ -62,3 +61,4 @@ D:\Технологии программирования\Training apparatus\Trai
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Castle.Core.xml
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Ninject.xml
 D:\Технологии программирования\Training apparatus\Training apparatus\bin\Debug\Ninject.Extensions.Factory.xml
+D:\Технологии программирования\Training apparatus\Training apparatus\obj\Debug\Training_apparatus.RegistrationForm.resources

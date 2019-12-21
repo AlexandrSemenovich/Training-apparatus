@@ -3,40 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ninject;
-using Training_apparatus.Models.Servise;
-using Training_apparatus.Presentation;
+using Training_apparatus.Service;
+using Training_apparatus.Models.Entity;
 
-namespace Training_apparatus.Presentation
+namespace Training_apparatus.Presenter
 {
-    public class LoginPresenter
+    public class LoginPresenter : IPresenter
     {
-        private IKernel _kernel;
-        private Scs _scs;
-        private ILoginView _view;
-        public LoginPresenter(IKernel kernel, Scs scs, ILoginView view)
+        private readonly ILoginView _view;
+        private readonly ILoginService _service;
+
+        public LoginPresenter(ILoginView view, ILoginService service)
         {
-            _kernel = kernel;
-            _scs = scs;
             _view = view;
-            _view.RegisterUser += RegisterUser;
-            _view.EnterUser += EnterUser;
-            _view.EnterAdmin += EnterAdmin;
-        }
+            _service = service;
 
-        private void EnterAdmin()
-        {
-            _kernel.Get<AdminForm>().Run();
-        }
-
-        private void EnterUser()
-        {
-            _kernel.Get<MainFormPresenter>().Run();
-        }
-
-        private void RegisterUser()
-        {
-            _kernel.Get<RegisterPresenter>().Run();
+            _view.Login += () => Login(_view.Username, _view.Password);
+            _view.GoToRegistration += () => GoToRegistration();
         }
 
         public void Run()
@@ -44,5 +27,34 @@ namespace Training_apparatus.Presentation
             _view.Show();
         }
 
+        public void StartProgram()
+        {
+            _view.Start();
+        }
+
+        private void Login(string username, string password)
+        {
+            if (username == "")
+                throw new ArgumentNullException("username");
+            if (password == "")
+                throw new ArgumentNullException("password");
+
+            var user = new User { Name = username, Password = password };
+            if (!_service.Login(user))
+            {
+                _view.ShowError("Invalid username or password");
+            }
+            else
+            {
+                new MainFormPresenter(new MainForm()).Run();
+                _view.Close();
+            }
+        }
+
+        private void GoToRegistration()
+        {
+            new RegistrationPresenter(new RegistrationForm(), new RegistrationService()).Run();
+           // _view.Close();
+        }
     }
 }
